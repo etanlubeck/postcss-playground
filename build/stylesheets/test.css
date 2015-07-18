@@ -1,0 +1,71 @@
+.foo {
+    content: 'foo';
+}
+
+.bar {
+    content: 'bar';
+    background: #056ef0;
+}
+
+.baz {
+    content: 'baz';
+}
+
+.col-xs-1 {
+    width: calc(1/768);
+}
+
+.col-xs-2 {
+    width: calc(2/768);
+}
+
+.col-xs-3 {
+    width: calc(3/768);
+}
+
+.col-xs-4 {
+    width: calc(4/768);
+}
+
+.col-xs-5 {
+    width: calc(5/768);
+}
+
+.col-xs-6 {
+    width: calc(6/768);
+}
+
+.col-xs-7 {
+    width: calc(7/768);
+}
+
+.col-xs-8 {
+    width: calc(8/768);
+}
+
+.col-xs-9 {
+    width: calc(9/768);
+}
+
+.col-xs-10 {
+    width: calc(10/768);
+}
+
+.col-xs-11 {
+    width: calc(11/768);
+}
+
+.col-xs-12 {
+    width: calc(12/768);
+}
+
+.menu {
+    width: calc(4 * 400px);
+}
+
+.menu_link {
+    background: #056ef0;
+    width: 400px;
+}
+
+/*# sourceMappingURL=test.css.map */

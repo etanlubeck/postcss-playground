@@ -1,0 +1,31 @@
+@import "partials/_variables.css";
+
+$array: (foo, bar, baz);
+@each $i in $array {
+  .$i {
+    content: '$i';
+    @if $i == bar {
+      background: $blue;
+    }
+  }
+}
+
+@define-mixin grid $size, $width, $columns {
+
+    @for $i from 1 to 12 {
+      .col-$(size)-$(i) {
+        width: calc($i/$width);
+      }
+    }
+}
+
+@mixin grid xs,768,18;
+
+.menu {
+    width: calc(4 * $column);
+}
+
+.menu_link {
+    background: $blue;
+    width: $column;
+}

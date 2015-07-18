@@ -1,0 +1,23 @@
+{
+  "name": "postcss-play",
+  "version": "1.0.0",
+  "description": "Module of the Month",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "Nate Lubeck <nate@wolframcreative.com> (http://www.wolframcreative.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-postcss": "^5.1.9",
+    "postcss": "^4.1.16",
+    "postcss-load-plugins": "^1.0.1",
+    "precss": "^0.2.2"
+  },
+  "devDependencies": {
+    "gulp-sourcemaps": "^1.5.2"
+  }
+}
