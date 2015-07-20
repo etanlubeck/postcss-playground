@@ -7,6 +7,6 @@ postcss is an ecosystem of plugins that transforms CSS.
 - CLI: ``` npm install -g postcss-cli ```
 
 # Resources
-[postcss](https://github.com/postcss)
-[PostCSS Docs](https://github.com/postcss/postcss/blob/master/docs/api.md)
-[CodePen](https://blog.codepen.io/2015/07/14/postcss-now-supported-on-codepen/)
+[postcss](https://github.com/postcss)  
+[PostCSS Docs](https://github.com/postcss/postcss/blob/master/docs/api.md)  
+[CodePen](https://blog.codepen.io/2015/07/14/postcss-now-supported-on-codepen/)  
