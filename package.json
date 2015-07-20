@@ -10,10 +10,12 @@
   "author": "Nate Lubeck <nate@wolframcreative.com> (http://www.wolframcreative.com/)",
   "license": "ISC",
   "dependencies": {
+    "cssnext": "^1.8.1",
     "gulp": "^3.9.0",
     "gulp-load-plugins": "^1.0.0-rc.1",
     "gulp-postcss": "^5.1.9",
     "postcss": "^4.1.16",
+    "postcss-calc": "^4.1.0",
     "postcss-load-plugins": "^1.0.1",
     "precss": "^0.2.2"
   },

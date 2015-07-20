@@ -1,66 +1,78 @@
+/* PreCSS - FTW */
+/* Yah! Partials */
+
+/* Arrays */
+
+/* Loops */
 .foo {
-    content: 'foo';
+  content: 'foo';
 }
-
 .bar {
-    content: 'bar';
-    background: #056ef0;
+  content: 'bar';
+  background: rgba(#056ef0, 0.5);
 }
-
 .baz {
-    content: 'baz';
+  content: 'baz';
 }
 
-.col-xs-1 {
-    width: calc(1/768);
+/* Mixins
+TODO: convert variables to a numerical value. start, end, increment
+*/
+
+/* Generates a grid with .col-xs-* at min-width: 320px with 18 columns */
+
+@media only screen and (min-width: 320px) {
+  .col-xs-1 {
+    width: 0.313%;
+  }
+  .col-xs-2 {
+    width: 0.625%;
+  }
+  .col-xs-3 {
+    width: 0.938%;
+  }
+  .col-xs-4 {
+    width: 1.25%;
+  }
+  .col-xs-5 {
+    width: 1.563%;
+  }
+  .col-xs-6 {
+    width: 1.875%;
+  }
+  .col-xs-7 {
+    width: 2.188%;
+  }
+  .col-xs-8 {
+    width: 2.5%;
+  }
+  .col-xs-9 {
+    width: 2.813%;
+  }
+  .col-xs-10 {
+    width: 3.125%;
+  }
+  .col-xs-11 {
+    width: 3.438%;
+  }
+  .col-xs-12 {
+    width: 3.75%;
+  }
 }
 
-.col-xs-2 {
-    width: calc(2/768);
+/* CSS4 */
+
+:any-link {
+  background: yellow;
 }
 
-.col-xs-3 {
-    width: calc(3/768);
+header:has(h1) {
+  content: '';
 }
 
-.col-xs-4 {
-    width: calc(4/768);
-}
-
-.col-xs-5 {
-    width: calc(5/768);
-}
-
-.col-xs-6 {
-    width: calc(6/768);
-}
-
-.col-xs-7 {
-    width: calc(7/768);
-}
-
-.col-xs-8 {
-    width: calc(8/768);
-}
-
-.col-xs-9 {
-    width: calc(9/768);
-}
-
-.col-xs-10 {
-    width: calc(10/768);
-}
-
-.col-xs-11 {
-    width: calc(11/768);
-}
-
-.col-xs-12 {
-    width: calc(12/768);
-}
 
 .menu {
-    width: calc(4 * 400px);
+    width: 1600px;
 }
 
 .menu_link {

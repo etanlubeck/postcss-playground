@@ -7,7 +7,9 @@ var
 
 gulp.task('styles', function (cb){
   var processors = [
-    precss
+    precss,
+    plugins.calc,
+    plugins.cssnext
   ];
   return gulp.src(['*.css'], {cwd: 'src/css'})
     .pipe(g.sourcemaps.init())

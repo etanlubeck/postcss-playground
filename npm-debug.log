@@ -1,36 +1,179 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'run', 'gulp' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'search', 'autoprefixer' ]
 2 info using npm@2.6.0
 3 info using node@v0.12.7
 4 verbose node symlink /usr/local/bin/node
-5 verbose run-script [ 'pregulp', 'gulp', 'postgulp' ]
-6 info pregulp postcss-play@1.0.0
-7 info gulp postcss-play@1.0.0
-8 verbose unsafe-perm in lifecycle true
-9 info postcss-play@1.0.0 Failed to exec gulp script
-10 verbose stack Error: postcss-play@1.0.0 gulp: `gulp`
-10 verbose stack Exit status 1
-10 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
-10 verbose stack     at EventEmitter.emit (events.js:110:17)
-10 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
-10 verbose stack     at ChildProcess.emit (events.js:110:17)
-10 verbose stack     at maybeClose (child_process.js:1015:16)
-10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
-11 verbose pkgid postcss-play@1.0.0
-12 verbose cwd /Users/etanlubeck/Projects/postcss-play
-13 error Darwin 14.4.0
-14 error argv "node" "/usr/local/bin/npm" "run" "gulp"
-15 error node v0.12.7
-16 error npm  v2.6.0
-17 error code ELIFECYCLE
-18 error postcss-play@1.0.0 gulp: `gulp`
-18 error Exit status 1
-19 error Failed at the postcss-play@1.0.0 gulp script 'gulp'.
-19 error This is most likely a problem with the postcss-play package,
-19 error not with npm itself.
-19 error Tell the author that this fails on your system:
-19 error     gulp
-19 error You can get their info via:
-19 error     npm owner ls postcss-play
-19 error There is likely additional logging output above.
-20 verbose exit [ 1, true ]
+5 silly mapToRegistry name -/all
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry https://registry.npmjs.org/
+8 silly mapToRegistry uri https://registry.npmjs.org/-/all
+9 info updateIndex /Users/etanlubeck/.npm/registry.npmjs.org/-/all/.cache.json
+10 verbose request uri https://registry.npmjs.org/-/all/since?stale=update_after&startkey=1437188382510
+11 verbose request no auth needed
+12 info attempt registry request try #1 at 22:46:12
+13 verbose request using bearer token for auth
+14 verbose request id 0b367899b9d8a855
+15 http request GET https://registry.npmjs.org/-/all/since?stale=update_after&startkey=1437188382510
+16 http 503 https://registry.npmjs.org/-/all/since?stale=update_after&startkey=1437188382510
+17 verbose bad json <?xml version="1.0" encoding="utf-8"?>
+17 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+17 verbose bad json  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+17 verbose bad json <html>
+17 verbose bad json   <head>
+17 verbose bad json     <title>503 backend read error</title>
+17 verbose bad json   </head>
+17 verbose bad json   <body>
+17 verbose bad json     <h1>Error 503 backend read error</h1>
+17 verbose bad json     <p>backend read error</p>
+17 verbose bad json     <h3>Guru Mediation:</h3>
+17 verbose bad json     <p>Details: cache-lax1422-LAX 1437371187 1358174755</p>
+17 verbose bad json     <hr>
+17 verbose bad json     <p>Varnish cache server</p>
+17 verbose bad json   </body>
+17 verbose bad json </html>
+18 error registry error parsing json
+19 info retry will retry, error on last attempt: SyntaxError: Unexpected token <
+19 info retry
+19 info retry <?xml version="1.0" encoding="utf-8"?>
+19 info retry <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+19 info retry  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+19 info retry <html>
+19 info retry   <head>
+19 info retry     <title>503 backend read error</title>
+19 info retry   </head>
+19 info retry   <body>
+19 info retry     <h1>Error 503 backend read error</h1>
+19 info retry     <p>backend read error</p>
+19 info retry     <h3>Guru Mediation:</h3>
+19 info retry     <p>Details: cache-lax1422-LAX 1437371187 1358174755</p>
+19 info retry     <hr>
+19 info retry     <p>Varnish cache server</p>
+19 info retry   </body>
+19 info retry </html>
+20 info attempt registry request try #2 at 22:46:37
+21 verbose request using bearer token for auth
+22 http request GET https://registry.npmjs.org/-/all/since?stale=update_after&startkey=1437188382510
+23 http 503 https://registry.npmjs.org/-/all/since?stale=update_after&startkey=1437188382510
+24 verbose bad json <?xml version="1.0" encoding="utf-8"?>
+24 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+24 verbose bad json  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+24 verbose bad json <html>
+24 verbose bad json   <head>
+24 verbose bad json     <title>503 backend read error</title>
+24 verbose bad json   </head>
+24 verbose bad json   <body>
+24 verbose bad json     <h1>Error 503 backend read error</h1>
+24 verbose bad json     <p>backend read error</p>
+24 verbose bad json     <h3>Guru Mediation:</h3>
+24 verbose bad json     <p>Details: cache-sjc3123-SJC 1437371213 751247437</p>
+24 verbose bad json     <hr>
+24 verbose bad json     <p>Varnish cache server</p>
+24 verbose bad json   </body>
+24 verbose bad json </html>
+25 error registry error parsing json
+26 info retry will retry, error on last attempt: SyntaxError: Unexpected token <
+26 info retry
+26 info retry <?xml version="1.0" encoding="utf-8"?>
+26 info retry <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+26 info retry  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+26 info retry <html>
+26 info retry   <head>
+26 info retry     <title>503 backend read error</title>
+26 info retry   </head>
+26 info retry   <body>
+26 info retry     <h1>Error 503 backend read error</h1>
+26 info retry     <p>backend read error</p>
+26 info retry     <h3>Guru Mediation:</h3>
+26 info retry     <p>Details: cache-sjc3123-SJC 1437371213 751247437</p>
+26 info retry     <hr>
+26 info retry     <p>Varnish cache server</p>
+26 info retry   </body>
+26 info retry </html>
+27 info attempt registry request try #3 at 22:47:53
+28 verbose request using bearer token for auth
+29 http request GET https://registry.npmjs.org/-/all/since?stale=update_after&startkey=1437188382510
+30 http 503 https://registry.npmjs.org/-/all/since?stale=update_after&startkey=1437188382510
+31 verbose bad json <?xml version="1.0" encoding="utf-8"?>
+31 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+31 verbose bad json  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+31 verbose bad json <html>
+31 verbose bad json   <head>
+31 verbose bad json     <title>503 backend read error</title>
+31 verbose bad json   </head>
+31 verbose bad json   <body>
+31 verbose bad json     <h1>Error 503 backend read error</h1>
+31 verbose bad json     <p>backend read error</p>
+31 verbose bad json     <h3>Guru Mediation:</h3>
+31 verbose bad json     <p>Details: cache-lax1420-LAX 1437371288 767670814</p>
+31 verbose bad json     <hr>
+31 verbose bad json     <p>Varnish cache server</p>
+31 verbose bad json   </body>
+31 verbose bad json </html>
+32 error registry error parsing json
+33 verbose headers { server: 'Varnish',
+33 verbose headers   'retry-after': '0',
+33 verbose headers   'content-type': 'text/html; charset=utf-8',
+33 verbose headers   'content-length': '447',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Mon, 20 Jul 2015 05:48:08 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'close',
+33 verbose headers   'x-served-by': 'cache-lax1420-LAX',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1437371273.638364,VS0,VE15093' }
+34 verbose stack SyntaxError: Unexpected token <
+34 verbose stack
+34 verbose stack <?xml version="1.0" encoding="utf-8"?>
+34 verbose stack <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+34 verbose stack  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+34 verbose stack <html>
+34 verbose stack   <head>
+34 verbose stack     <title>503 backend read error</title>
+34 verbose stack   </head>
+34 verbose stack   <body>
+34 verbose stack     <h1>Error 503 backend read error</h1>
+34 verbose stack     <p>backend read error</p>
+34 verbose stack     <h3>Guru Mediation:</h3>
+34 verbose stack     <p>Details: cache-lax1420-LAX 1437371288 767670814</p>
+34 verbose stack     <hr>
+34 verbose stack     <p>Varnish cache server</p>
+34 verbose stack   </body>
+34 verbose stack </html>
+34 verbose stack
+34 verbose stack     at Object.parse (native)
+34 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:205:23)
+34 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:14)
+34 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:344:22)
+34 verbose stack     at Request.emit (events.js:110:17)
+34 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1239:14)
+34 verbose stack     at Request.emit (events.js:129:20)
+34 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1187:12)
+34 verbose stack     at IncomingMessage.emit (events.js:129:20)
+34 verbose stack     at _stream_readable.js:908:16
+35 verbose cwd /Users/etanlubeck/Projects/postcss-play
+36 error Darwin 14.4.0
+37 error argv "node" "/usr/local/bin/npm" "search" "autoprefixer"
+38 error node v0.12.7
+39 error npm  v2.6.0
+40 error Unexpected token <
+40 error
+40 error <?xml version="1.0" encoding="utf-8"?>
+40 error <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+40 error  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+40 error <html>
+40 error   <head>
+40 error     <title>503 backend read error</title>
+40 error   </head>
+40 error   <body>
+40 error     <h1>Error 503 backend read error</h1>
+40 error     <p>backend read error</p>
+40 error     <h3>Guru Mediation:</h3>
+40 error     <p>Details: cache-lax1420-LAX 1437371288 767670814</p>
+40 error     <hr>
+40 error     <p>Varnish cache server</p>
+40 error   </body>
+40 error </html>
+41 error If you need help, you may report this error at:
+41 error     <http://github.com/npm/npm/issues>
+42 verbose exit [ 1, true ]
