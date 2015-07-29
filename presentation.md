@@ -1,15 +1,14 @@
 
 class: middle, center
+color: red;
 
 # JS.LA Module of the Month
 PostCSS
 
-!(PostCSS)[https://blog.codepen.io/wp-content/uploads/2015/07/postcss.png]
 
 ---
+class: middle
 
 # What is it?
-
-*???
 
 ---
