@@ -22,34 +22,10 @@ Small plain JS functions, which receive a CSS node tree, transform it, and retur
 
 
 ---
-# Installing
+# Install & Use
 
 __Package__  
 ```npm install postcss```  
-
-__Gulp__  
-```npm install gulp-postcss```  
-
-
-__CLI__  
-```npm install -g postcss-cli```  
-
-
-
----
-__Gulp__  
-
-```javascript
-gulp.task('css', function () {
-    var postcss = require('gulp-postcss');
-    return gulp.src('src/**/*.css')
-        .pipe( postcss([ require('cssnext')(), require('cssnano')() ]) )
-        .pipe( gulp.dest('build/') );
-});
-```
-
-__API__  
-
 ```javascript
 var postcss = require('postcss');
 postcss([ require('cssnext')(), require('cssnano')() ])
@@ -60,19 +36,14 @@ postcss([ require('cssnext')(), require('cssnano')() ])
     });
 ```
 
-
-__CLI__  
-
-``` postcss --config config.json -o output.css input.css ```  
+__Gulp__  
+```npm install gulp-postcss```  
 
 ```javascript
-{
-    "autoprefixer": {
-        "browsers": "> 5%"
-    },
-    "postcss-cachify": {
-        "baseUrl": "/res"
-    }
-}
-```  
-___
+gulp.task('css', function () {
+    var postcss = require('gulp-postcss');
+    return gulp.src('src/**/*.css')
+        .pipe( postcss([ require('cssnext')(), require('cssnano')() ]) )
+        .pipe( gulp.dest('build/') );
+});
+```
