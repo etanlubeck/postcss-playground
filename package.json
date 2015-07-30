@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+    "start": "gulp"
   },
   "author": "Nate Lubeck <nate@wolframcreative.com> (http://www.wolframcreative.com/)",
   "license": "ISC",

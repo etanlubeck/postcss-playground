@@ -70,39 +70,47 @@ Plugins:
 
 @media only screen and (min-width: 320px) {
 
-  .col-sm-* {
+  .col-xs-* {
     float: left;
   }
 
-  .col-sm-1 {
-    width: 12.5%;
+  .col-xs-1 {
+    width: 10%;
   }
 
-  .col-sm-2 {
-    width: 25%;
+  .col-xs-2 {
+    width: 20%;
   }
 
-  .col-sm-3 {
-    width: 37.5%;
+  .col-xs-3 {
+    width: 30%;
   }
 
-  .col-sm-4 {
+  .col-xs-4 {
+    width: 40%;
+  }
+
+  .col-xs-5 {
     width: 50%;
   }
 
-  .col-sm-5 {
-    width: 62.5%;
+  .col-xs-6 {
+    width: 60%;
   }
 
-  .col-sm-6 {
-    width: 75%;
+  .col-xs-7 {
+    width: 70%;
   }
 
-  .col-sm-7 {
-    width: 87.5%;
+  .col-xs-8 {
+    width: 80%;
   }
 
-  .col-sm-8 {
+  .col-xs-9 {
+    width: 90%;
+  }
+
+  .col-xs-10 {
     width: 100%;
   }
 }
@@ -112,12 +120,12 @@ Plugins:
 
 
 /* Extends */
-.random-class {
+.randomClass {
   background-color: green;
 }
 
 
-.random-class {
+.randomClass {
 }
 
 /* CSS4 */
@@ -139,5 +147,3 @@ header:has(h1) {
     background: #056ef0;
     width: 400px;
 }
-
-/*# sourceMappingURL=test.css.map */

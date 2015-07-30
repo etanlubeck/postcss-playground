@@ -76,7 +76,7 @@ $array: (foo, bar, baz);
 
 /* Name: $size Breakpoint: $min-width Columns: $columns */
 
-@mixin grid sm, 320, 8;
+@mixin grid xs,320,10;
 
 /* Functional Mixin */
 /* @mixin icon signin; */
@@ -88,7 +88,7 @@ $array: (foo, bar, baz);
 }
 
 
-.random-class {
+.randomClass {
   @extend bg-green;
 }
 
