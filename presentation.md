@@ -23,9 +23,10 @@ class: middle, center
 ---
 
 # Installing
-
+Package: ``` npm install postcss ```  
 Gulp: ``` npm install gulp-postcss ```  
 CLI: ``` npm install -g postcss-cli ```  
+
 
 
 ---
