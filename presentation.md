@@ -17,7 +17,8 @@ These plugins can support variables and mixins, transpile future CSS syntax, inl
 ---
 class: middle, center
 
-## CSS parser, a CSS node tree API, a source map generator, and a node tree stringifier
+# How does it work?
+Small plain JS functions, which receive a CSS node tree, transform it, and return a modified tree.
 
 
 ---
@@ -36,7 +37,7 @@ __CLI__
 
 
 ---
-### Gulp
+__Gulp__  
 
 ```javascript
 gulp.task('css', function () {
@@ -47,7 +48,7 @@ gulp.task('css', function () {
 });
 ```
 
-### API
+__API__  
 
 ```javascript
 var postcss = require('postcss');
@@ -59,7 +60,8 @@ postcss([ require('cssnext')(), require('cssnano')() ])
     });
 ```
 
-### CLI
+
+__CLI__  
 
 ``` postcss --config config.json -o output.css input.css ```  
 
@@ -72,4 +74,5 @@ postcss([ require('cssnext')(), require('cssnano')() ])
         "baseUrl": "/res"
     }
 }
-```
+```  
+___
