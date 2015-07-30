@@ -21,17 +21,17 @@ class: middle, center
 
 
 ---
-
 # Installing
-Package: ```javascript npm install postcss ```  
-Gulp: ```javascript npm install gulp-postcss ```  
-CLI: ```javascript npm install -g postcss-cli ```  
+__Package__  
+npm install postcss  
+__Gulp__  
+npm install gulp-postcss  
+__CLI__
+npm install -g postcss-cli
 
 
 
 ---
-
-#
 ## Gulp
 
 ```javascript
@@ -54,4 +54,4 @@ postcss([ require('cssnext')(), require('cssnano')() ])
         if ( result.map ) fs.writeFileSync('app.css.map', result.map);
     });
 ```
-
+___
