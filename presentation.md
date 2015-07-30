@@ -22,17 +22,21 @@ class: middle, center
 
 ---
 # Installing
+
 __Package__  
-npm install postcss  
+```npm install postcss```  
+
 __Gulp__  
-npm install gulp-postcss  
-__CLI__
-npm install -g postcss-cli
+```npm install gulp-postcss```  
+
+
+__CLI__  
+```npm install -g postcss-cli```  
 
 
 
 ---
-## Gulp
+### Gulp
 
 ```javascript
 gulp.task('css', function () {
@@ -43,7 +47,7 @@ gulp.task('css', function () {
 });
 ```
 
-## API
+### API
 
 ```javascript
 var postcss = require('postcss');
@@ -54,4 +58,18 @@ postcss([ require('cssnext')(), require('cssnano')() ])
         if ( result.map ) fs.writeFileSync('app.css.map', result.map);
     });
 ```
-___
+
+### CLI
+
+``` postcss --config config.json -o output.css input.css ```  
+
+```javascript
+{
+    "autoprefixer": {
+        "browsers": "> 5%"
+    },
+    "postcss-cachify": {
+        "baseUrl": "/res"
+    }
+}
+```
