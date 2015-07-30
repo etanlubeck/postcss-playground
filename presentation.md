@@ -1,6 +1,6 @@
 
 class: middle, center  
-color: red
+background-color: 
 
 # JS.LA: Module of the Month
 ## PostCSS
@@ -10,7 +10,8 @@ color: red
 class: middle, center
 
 # What is it?
-preprocessor? postprocessor? linter?
+## PostCSS is a tool for transforming CSS with JS plugins. 
+These plugins can support variables and mixins, transpile future CSS syntax, inline images, and more.
 
 
 ---
@@ -53,4 +54,3 @@ postcss([ require('cssnext')(), require('cssnano')() ])
     });
 ```
 
----
