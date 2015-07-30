@@ -22,7 +22,7 @@ Small plain JS functions, which receive a CSS node tree, transform it, and retur
 
 
 ---
-# Install & Use
+# How do I use it?
 
 __Package__  
 ```npm install postcss```  
