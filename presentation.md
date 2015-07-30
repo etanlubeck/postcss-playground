@@ -24,8 +24,8 @@ class: middle, center
 
 # Installing
 
-Gulp: ``` npm install gulp-postcss ```
-CLI: ``` npm install -g postcss-cli ```
+Gulp: ``` npm install gulp-postcss ```  
+CLI: ``` npm install -g postcss-cli ```  
 
 
 ---
@@ -42,7 +42,7 @@ gulp.task('css', function () {
 });
 ```
 
-## CLI
+## API
 
 ```javascript
 var postcss = require('postcss');
