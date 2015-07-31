@@ -46,4 +46,11 @@ gulp.task('css', function () {
         .pipe( postcss([ require('cssnext')(), require('cssnano')() ]) )
         .pipe( gulp.dest('build/') );
 });
-```
+```  
+---
+class: middle, center
+
+# Fin
+
+
+@etanlubeck
