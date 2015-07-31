@@ -1,16 +1,3 @@
-/* PreCSS - FTW
-Plugins:
-- postcss-advanced-variables
-- postcss-import
-- postcss-media-minmax
-- postcss-mixins
-- postcss-nested
-- postcss-sass-extend
-- postcss-simple-extend
-- postcss-simple-vars
-*/
-
-
 /* Yah! Partials */
 
 /* Arrays */
@@ -18,132 +5,94 @@ Plugins:
 /* Conditionals */
 
 .conditional {
-  height: 20px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+
+    height: 20px
 }
 
 /* Loops */
 .foo {
-  content: 'foo';
+
+    content: 'foo'
 }
 .bar {
-  content: 'bar';
-  background: rgba(#056ef0, 0.5);
+
+    content: 'bar';
+
+    background: rgba(#056ef0, 0.5)
 }
 .baz {
-  content: 'baz';
+
+    content: 'baz'
 }
 
 .col-1 {
-  display: block;
+
+    display: block
 }
 
 .col-3 {
-  display: none;
-}
 
-.col-5 {
-  display: block;
-}
-
-.col-7 {
-  display: block;
-}
-
-.col-9 {
-  display: block;
+    display: none
 }
 
 
 /* Mixins */
 
-@media only screen and (min-width: 220px) {
 
-  .keep-classy {
-    background: dodgerblue;
-  }
-}
+@media only screen and (min-width: 240px) {
 
-/* Name: $size Breakpoint: $min-width Columns: $columns */
+    .col-xs-* {
 
-@media only screen and (min-width: 320px) {
+        float: left
+    }
 
-  .col-xs-* {
-    float: left;
-  }
+    .col-xs-1 {
 
-  .col-xs-1 {
-    width: 10%;
-  }
+        width: 10%
+    }
 
-  .col-xs-2 {
-    width: 20%;
-  }
+    .col-xs-2 {
 
-  .col-xs-3 {
-    width: 30%;
-  }
+        width: 20%
+    }
 
-  .col-xs-4 {
-    width: 40%;
-  }
+    .col-xs-3 {
 
-  .col-xs-5 {
-    width: 50%;
-  }
+        width: 30%
+    }
 
-  .col-xs-6 {
-    width: 60%;
-  }
+    .col-xs-4 {
 
-  .col-xs-7 {
-    width: 70%;
-  }
+        width: 40%
+    }
 
-  .col-xs-8 {
-    width: 80%;
-  }
+    .col-xs-5 {
 
-  .col-xs-9 {
-    width: 90%;
-  }
+        width: 50%
+    }
 
-  .col-xs-10 {
-    width: 100%;
-  }
-}
+    .col-xs-6 {
 
-/* Functional Mixin */
-/* @mixin icon signin; */
+        width: 60%
+    }
 
+    .col-xs-7 {
 
-/* Extends */
-.randomClass {
-  background-color: green;
-}
+        width: 70%
+    }
 
+    .col-xs-8 {
 
-.randomClass {
-}
+        width: 80%
+    }
 
-/* CSS4 */
+    .col-xs-9 {
 
-:any-link {
-  background: yellow;
-}
+        width: 90%
+    }
 
-header:has(h1) {
-  content: '';
-}
+    .col-xs-10 {
 
-
-.menu {
-    width: 1600px;
-}
-
-.menu_link {
-    background: #056ef0;
-    width: 400px;
+        width: 100%
+    }
 }

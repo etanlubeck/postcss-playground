@@ -1,16 +1,3 @@
-/* PreCSS - FTW
-Plugins:
-- postcss-advanced-variables
-- postcss-import
-- postcss-media-minmax
-- postcss-mixins
-- postcss-nested
-- postcss-sass-extend
-- postcss-simple-extend
-- postcss-simple-vars
-*/
-
-
 /* Yah! Partials */
 @import "partials/_variables.css";
 
@@ -22,7 +9,7 @@ $array: (foo, bar, baz);
 @if 1 < 3 {
   .conditional {
     height: 20px;
-    display: flex;
+    
   }
 }
 
@@ -36,7 +23,7 @@ $array: (foo, bar, baz);
   }
 }
 
-@for $i from 1 to 10 by 2 {
+@for $i from 1 to 4 by 2 {
   .col-$(i) {
     @if $i != 3 {
       display: block;
@@ -62,52 +49,5 @@ $array: (foo, bar, baz);
   }
 }
 
-@define-mixin respond-min $width {
-  @media only screen and (min-width: $(width)px) {
-    @mixin-content;
-  }
-}
 
-@mixin respond-min 220 {
-  .keep-classy {
-    background: dodgerblue;
-  }
-}
-
-/* Name: $size Breakpoint: $min-width Columns: $columns */
-
-@mixin grid xs,320,10;
-
-/* Functional Mixin */
-/* @mixin icon signin; */
-
-
-/* Extends */
-@define-extend bg-green {
-  background-color: green;
-}
-
-
-.randomClass {
-  @extend bg-green;
-}
-
-/* CSS4 */
-
-:any-link {
-  background: yellow;
-}
-
-header:has(h1) {
-  content: '';
-}
-
-
-.menu {
-    width: calc(4 * $column);
-}
-
-.menu_link {
-    background: $blue;
-    width: $column;
-}
+@mixin grid xs,240,10;
