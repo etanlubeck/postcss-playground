@@ -1,51 +1,34 @@
 
 class: middle, center  
-color: red
+background-color: #f5dd3d  
 
 # JS.LA: Module of the Month
 ## PostCSS
 
 
 ---
-class: middle, center
+class: middle, center  
+background-color: #f5dd3d  
 
 # What is it?
-preprocessor? postprocessor? linter?
+## PostCSS is a tool for transforming CSS with JS plugins. 
+These plugins can support variables and mixins, transpile future CSS syntax, inline images, and more.
 
 
 ---
-class: middle, center
+class: middle, center  
+background-color: #f5dd3d  
 
-## CSS parser, a CSS node tree API, a source map generator, and a node tree stringifier
-
-
----
-
-class: middle, center
-
-# Installing
-
-- Gulp: ``` npm install gulp-postcss ```
-- CLI: ``` npm install -g postcss-cli ```
+# How does it work?
+Small plain JS functions, which receive a CSS node tree, transform it, and return a modified tree.
 
 
 ---
+background-color: #f5dd3d  
+# How do I use it?
 
-class: middle, center
-
-## Gulp
-
-```javascript
-gulp.task('css', function () {
-    var postcss = require('gulp-postcss');
-    return gulp.src('src/**/*.css')
-        .pipe( postcss([ require('cssnext')(), require('cssnano')() ]) )
-        .pipe( gulp.dest('build/') );
-});
-```
-
-## CLI
-
+__Package__  
+```npm install postcss```  
 ```javascript
 var postcss = require('postcss');
 postcss([ require('cssnext')(), require('cssnano')() ])
@@ -56,4 +39,22 @@ postcss([ require('cssnext')(), require('cssnano')() ])
     });
 ```
 
+__Gulp__  
+```npm install gulp-postcss```  
+
+```javascript
+gulp.task('css', function () {
+    var postcss = require('gulp-postcss');
+    return gulp.src('src/**/*.css')
+        .pipe( postcss([ require('cssnext')(), require('cssnano')() ]) )
+        .pipe( gulp.dest('build/') );
+});
+```  
 ---
+class: middle, center  
+background-color: #f5dd3d  
+
+# Fin
+
+
+@etanlubeck
