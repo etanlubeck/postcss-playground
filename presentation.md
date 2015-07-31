@@ -1,13 +1,14 @@
 
 class: middle, center  
-background-color: 
+background-color: #f5dd3d  
 
 # JS.LA: Module of the Month
 ## PostCSS
 
 
 ---
-class: middle, center
+class: middle, center  
+background-color: #f5dd3d  
 
 # What is it?
 ## PostCSS is a tool for transforming CSS with JS plugins. 
@@ -15,13 +16,15 @@ These plugins can support variables and mixins, transpile future CSS syntax, inl
 
 
 ---
-class: middle, center
+class: middle, center  
+background-color: #f5dd3d  
 
 # How does it work?
 Small plain JS functions, which receive a CSS node tree, transform it, and return a modified tree.
 
 
 ---
+background-color: #f5dd3d  
 # How do I use it?
 
 __Package__  
@@ -48,7 +51,8 @@ gulp.task('css', function () {
 });
 ```  
 ---
-class: middle, center
+class: middle, center  
+background-color: #f5dd3d  
 
 # Fin
 
